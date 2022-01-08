@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+    background-blend-mode: multiply;
+    background: #616161;
+    background-image: url(/data/jonathan-borba-O2fAWP7uDSQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+header {
+    background: #3e2723;
+    height: 6.250rem;
+    padding: 0 10rem;
+}
+
+.white {
+    color: white;
+}
+
+.flex_sb_c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ls_n {
+    list-style: none;
+}
+
+.f-s_1875 {
+    font-size: 1.875rem;
+}
+
+.f-s_1250 {
+    font-size: 1.250rem;
+}
+
+.f-s_3125 {
+    font-size: 3.125rem;
+}
+
+.t-d_n {
+    text-decoration: none;
+}
+
+.margin-rl_0625 {
+    margin: 0 0.625rem;
+}
+
+.margin-l_0625 {
+    margin-left: 0.625rem;
+}
+
+.margin-l_1250 {
+    margin-left: 1.250rem;
+}
+
+.margin-b_1250 {
+    margin-bottom: 1.250rem;
+}
+
+.margin-b_1875 {
+    margin-bottom: 1.875rem;
+}
+
+.logo article a {
+    white-space: nowrap;
+}
+
+nav ul li a {
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+.pullUp:before {
+    position: absolute;
+    width: 100%;
+    height: 0.125rem;
+    left: 0rem;
+    bottom: 0rem;
+    content: '';
+    background: white;
+    opacity: 0.3;
+    transition: all .3s
+}
+
+.pullUp:hover:before {
+    height: 100%;
+}
+
+.contents {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+}
+
+.navbar {
+    position: relative;
+}
+
+.info:hover {
+    opacity: 0.5;
+}
+
+.btn {
+    border: 0.125rem solid white ;
+    border-radius: 0.375rem;
+    padding: 0.625rem 1.250rem;
+}
+
+.btn:hover {
+    background-color: rgba(93, 64, 55, 0.7);
+}
+
+.bar_btn {
+    display: none;
+    font-size: 1.875rem;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.bar_btn i {
+    margin: 0.125rem 0.250rem;
+}
+
+.bar_btn:hover {
+    border-top: 0.125rem solid #bdbdbd;
+    border-left: 0.125rem solid #bdbdbd;
+    border-bottom: 0.125rem solid #424242;
+    border-right: 0.125rem solid #424242;
+}
+
+.bar_btn:hover:active {
+    border-top: 0.125rem solid #424242;
+    border-left: 0.125rem solid #424242;
+    border-bottom: 0.125rem solid #bdbdbd;
+    border-right: 0.125rem solid #bdbdbd;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer_nav {
+    display: none;
+    background: #3e2723;
+    height: 5rem;
+}
+
+@media (min-width: 48rem) and (max-width: 64rem) {
+    .logo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .bar_btn {
+        display: inline-block;
+        position: absolute;
+        right: 10rem;
+        cursor: pointer;
+    }
+
+    .contents {
+        top: 50%;
+        left: 40%;
+    }
+}
+
+@media (max-width: 47.938rem) {
+    header {
+        padding: 0 5rem;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .contents {
+        top: 40%;
+        left: 15%;
+    }
+
+    .footer_nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_nav ul li {
+        position: relative;
+        width: 5rem;
+        height: 5rem;
+        z-index: 1;
+    }
+
+    .footer_nav ul li a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .footer_nav ul li a .icon {
+        position: relative;
+        display: block;
+        line-height: 5rem;
+        font-size: 1.5rem;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .footer_nav ul li.active a .icon {
+        transform: translateY(-2.750rem);
+    }
+
+    .footer_nav ul li a .text {
+        position: absolute;
+        font-size: 1.063rem;
+        font-weight: 400;
+        letter-spacing: 0.05rem;
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateY(1.250rem);
+    }
+
+    .footer_nav ul li.active a .text {
+        opacity: 1;
+        transform: translateY(0.625rem)
+    }
+}
