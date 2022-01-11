@@ -11,52 +11,6 @@ body {
     background: #fffff0;
 }
 
-.flex_sb_c {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.ls_n {
-    list-style: none;
-}
-
-.f-s_1875 {
-    font-size: 1.875rem;
-}
-
-.f-s_1250 {
-    font-size: 1.250rem;
-}
-
-.f-s_3125 {
-    font-size: 3.125rem;
-}
-
-.t-d_n {
-    text-decoration: none;
-}
-
-.margin-rl_0625 {
-    margin: 0 0.625rem;
-}
-
-.margin-l_0625 {
-    margin-left: 0.625rem;
-}
-
-.margin-l_1250 {
-    margin-left: 1.250rem;
-}
-
-.margin-b_1250 {
-    margin-bottom: 1.250rem;
-}
-
-.margin-b_1875 {
-    margin-bottom: 1.875rem;
-}
-
 header {
     position: absolute;
     top: 0.625rem;
@@ -146,6 +100,39 @@ header {
     width: 50%;
     height: 100vh;
     box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, .2);
+}
+
+.container .shelfs {
+    border-top: 0.063rem solid #865439;
+    border-bottom: 0.063rem solid #865439;
+    background: #C68B59;
+    height: 1.250rem;
+    width: 25%;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container .shelf-one {
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+
+.container .shelf-two {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.container .shelf-three {
+    position: absolute;
+    top: 30%;
+    right: 0;
+}
+
+.container .shelf-four {
+    position: absolute;
+    top: 50%;
+    right: 0;
 }
 
 .container .desk {
@@ -612,9 +599,9 @@ header {
     }
 }
 
-.flowerpot {
+.container .desk .onTheDesk .flowerpot {
     width: 30rem;
     position: absolute;
-    top: -110%;
+    top: -115%;
     left: 60%;
 }
