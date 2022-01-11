@@ -74,7 +74,7 @@ header {
 
 .logo {
     white-space: nowrap;
-    font-size: 3.125rem;
+    width: 100px;
     text-decoration: none;
     color: #402218;
     position: relative;
@@ -86,10 +86,10 @@ header {
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
-    padding: 0 1.5rem;
+    padding: 0 2.5rem;
     list-style: none;
     position: absolute;
-    top: 120%;
+    top: 140%;
     left: 0;
 }
 
@@ -179,7 +179,7 @@ header {
     width: 12.500rem;
     height: 11.250rem;
     position: absolute;
-    top: 67%;
+    top: -35%;
     left: 20%;
 }
 
@@ -470,4 +470,151 @@ header {
     position: absolute;
     bottom: -0.938rem;
     left: -2%;
+}
+
+.cup-container {
+    position: absolute;
+    top: 5%;
+    left: 55%;
+}
+
+.cup-container .cup {
+    position: relative;
+    width: 4.375rem;
+    height: 5rem;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    z-index: 1;
+}
+
+.cup-container .cup .top {
+    position: absolute;
+    top: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 0.938rem;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    border-radius: 50%;
+}
+
+.cup-container .cup .top .circle {
+    position: absolute;
+    top: 0.188rem;
+    left: 0.250rem;
+    width: 90%;
+    height: 0.750rem;
+    background: linear-gradient(to left, #f9f9f9, #d9d9d9);
+    border-radius: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.cup-container .cup .top .circle .tea {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#c57e65, #e28462);
+    border-radius: 50%;
+}
+
+.cup-container .cup .cup-handle {
+    position: absolute;
+    right: -1.125rem;
+    top: 0.313rem;
+    width: 2.5rem;
+    height: 3.125rem;
+    border: 0.5rem solid #dcdcdc;
+    border-left: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid transparent;
+    border-radius: 50%;
+    transform: rotate(40deg);
+}
+
+.cup-container .cup-plate {
+    position: absolute;
+    bottom: -10px;
+    left: 29px;
+    transform: translateX(-50px);
+    width: 6.875rem;
+    height: 2.5rem;
+    background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+    border-radius: 50%;
+    box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
+}
+
+.cup-container .cup-plate::before {
+    content: '';
+    position: absolute;
+    top: 0.188rem;
+    left: 0.188rem;
+    right: 0.188rem;
+    bottom: 0.188rem;
+    border-radius: 50%;
+    background: linear-gradient(to left, #f9f9f9, #e7e7e7);
+}
+
+.cup-container .cup-plate::after {
+    content: '';
+    position: absolute;
+    top: 0.063rem;
+    left: 0.063rem;
+    right: 0.063rem;
+    bottom: 0.063rem;
+    border-radius: 50%;
+    background: radial-gradient(rgba(0, 0, 0, 0.2) 25%, transparent, transparent);
+}
+
+.cup-container .cup .top .vapour {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 5px;
+}
+
+.cup-container .cup .top .vapour span {
+    position: relative;
+    bottom: 1.250rem;
+    display: block;
+    margin: 0 0.050rem 3.125rem;
+    min-width: 0.094rem;
+    height: 2.5rem;
+    background: #fff;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    opacity: 0;
+    filter: blur(0.094rem);
+    animation-delay: calc(var(--i) * -0.5s);
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-1.563rem) scaleX(5);
+    }
+
+    95% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-3.125rem) scaleX(10);
+    }
+}
+
+.flowerpot {
+    width: 30rem;
+    position: absolute;
+    top: -110%;
+    left: 60%;
 }
