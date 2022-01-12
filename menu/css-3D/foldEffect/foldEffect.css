@@ -14,13 +14,17 @@
     font-family: 'GmarketSansMedium';
 }
 
+body {
+    background: #D7B19D;
+}
+
 .fold {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) skewY(0deg) rotate(0deg);
-    width: 480px;
-    height: 800px;
+    width: 420px;
+    height: 700px;
     background: #efebe9;
     box-sizing: border-box;
     border-top: 30px solid #5d4037;
@@ -30,7 +34,7 @@
 
 .fold:hover {
     transform: translate(-50%, -50%) skewY(15deg) rotate(0deg);
-    background: url(/data/coffeeBelt.jpg);
+    background: url(/data/coffeeBelt.png);
     background-size: cover;
     background-position: center;
 }
@@ -39,9 +43,9 @@
     content: '';
     width: 90%;
     height: calc(100% + 60px);
-    background: url(/data/coffeeBelt.jpg);
+    background: url(/data/coffeeBelt.png);
     background-size: cover;
-    background-position: -18px 0;
+    background-position: -80px 0;
     position: absolute;
     top: -30px;
     left: -90%;
@@ -63,9 +67,9 @@
     content: '';
     width: 90%;
     height: calc(100% + 60px);
-    background: url(/data/coffeeBelt.jpg);
+    background: url(/data/coffeeBelt.png);
     background-size: cover;
-    background-position: 302px 0;
+    background-position: 428px 0;
     position: absolute;
     top: -30px;
     right: -90%;
@@ -103,4 +107,227 @@
 
 .map-title p {
     margin-top: 1.250rem;
+}
+
+.fold .nav,
+.fold .country {
+    width: 100%;
+    padding: 1.250rem;
+    transition: 0.5s;
+    opacity: 0;
+    position: relative;
+}
+
+.fold:hover .nav,
+.fold:hover .country {
+    opacity: 1;
+}
+
+.list {
+    list-style: none;
+    font-size: 1.125rem;
+    color: #402218;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.circle_sign {
+    width: 1.438rem;
+    height: 1.438rem;
+    border-radius: 50%;
+    border: 1px solid #D7B19D;
+    display: inline-block;
+    text-align: center;
+    background: #D7B19D;
+}
+
+.one, .two, .seven, .eight {
+    transform: perspective(1000px) skewY(-25deg) rotateY(0deg);
+}
+
+.one {
+    top: 195px;
+    left: -58%;
+}
+
+.two {
+    top: 245px;
+    left: -58%;
+}
+
+.three {
+    top: 135px;
+    left: 1%;
+}
+
+.four {
+    top: 185px;
+    left: 1%;
+}
+
+.five {
+    top: 135px;
+    right: 1%;
+}
+
+.six {
+    top: 185px;
+    right: 17%;
+}
+
+.seven {
+    top: 90px;
+    right: -44%;
+    z-index: 1;
+}
+
+.eight {
+    top: 130px;
+    right: -56%;
+    z-index: 1;
+}
+
+.gua, .cos, .col, .vie, .ind {
+    transform: perspective(1000px) skewY(-25deg) rotateY(0deg);
+}
+
+.gua {
+    top: -85px;
+    left: -34%;
+}
+
+.cos {
+    top: -75px;
+    left: -28%;
+}
+
+.col {
+    top: -48px;
+    left: -20%;
+}
+
+.bra {
+    top: -55px;
+    left: 31%;
+}
+
+.eth {
+    top: -130px;
+    right: 12%;
+}
+
+.ken {
+    top: -93px;
+    right: 12%;
+}
+
+.vie {
+    top: -192px;
+    right: -32%;
+    z-index: 1;
+}
+
+.ind {
+    top: -95px;
+    right: -7%;
+    z-index: 1;
+}
+
+.glass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140%;
+    height: 140%;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.list:hover .glass {
+    top: -20px;
+    left: -20%;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.list .glass:nth-child(2) {
+    width: 180%;
+    height: 180%;
+}
+
+.list:hover .glass:nth-child(2) {
+    top: -50px;
+    left: -40%;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.list .glass:nth-child(3) {
+    width: 220%;
+    height: 220%;
+}
+
+.list:hover .glass:nth-child(3) {
+    top: -85px;
+    left: -60%;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.list .glass:nth-child(4) {
+    width: 1000%;
+    height: 1000%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    border-radius: 10%;
+    z-index: 1;
+    top: -800px;
+}
+
+.list:hover .glass:nth-child(4) {
+    top: -300px;
+    left: -450%;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.contents .flag {
+    position: absolute;
+    top: 0.625rem;
+    left: 0.625rem;
+    opacity: 0.5;
+}
+
+.contents .num {
+    position: absolute;
+    top: 1.250rem;
+    right: 0.625rem;
+    font-size: 2.188em;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.contents .name {
+    position: absolute;
+    top: 6.875rem;
+    left: 0.625rem;
+    font-size: 1.063em;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.contents .characteristic {
+    position: absolute;
+    top: 8.125rem;
+    left: 0;
+    font-size: 0.750em;
+    padding: 0.938rem 0.625rem;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+    pointer-events: none;
 }
