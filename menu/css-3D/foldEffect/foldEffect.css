@@ -1,0 +1,106 @@
+/* https://www.youtube.com/watch?v=3q9wH-1A298&list=PL5e68lK9hEze9y8yDozv1GHSGDM0ER9is&index=23 */
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'GmarketSansMedium';
+}
+
+.fold {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skewY(0deg) rotate(0deg);
+    width: 480px;
+    height: 800px;
+    background: #efebe9;
+    box-sizing: border-box;
+    border-top: 30px solid #5d4037;
+    border-bottom: 30px solid #5d4037;
+    transition: 1s;
+}
+
+.fold:hover {
+    transform: translate(-50%, -50%) skewY(15deg) rotate(0deg);
+    background: url(/data/coffeeBelt.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.fold::before {
+    content: '';
+    width: 90%;
+    height: calc(100% + 60px);
+    background: url(/data/coffeeBelt.jpg);
+    background-size: cover;
+    background-position: -18px 0;
+    position: absolute;
+    top: -30px;
+    left: -90%;
+    box-sizing: border-box;
+    border-top: 30px solid #6d4c41;
+    border-bottom: 30px solid #6d4c41;
+    border-left: 30px solid #6d4c41;
+    transform: perspective(1000px) skewY(-25deg) rotateY(-90deg);
+    transform-origin: right;
+    box-shadow: inset -15px 0 15px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+}
+
+.fold:hover:before {
+    transform: perspective(1000px) skewY(-25deg) rotateY(0deg);
+}
+
+.fold::after {
+    content: '';
+    width: 90%;
+    height: calc(100% + 60px);
+    background: url(/data/coffeeBelt.jpg);
+    background-size: cover;
+    background-position: 302px 0;
+    position: absolute;
+    top: -30px;
+    right: -90%;
+    box-sizing: border-box;
+    border-top: 30px solid #6d4c41;
+    border-bottom: 30px solid #6d4c41;
+    border-right: 30px solid #6d4c41;
+    transform: perspective(1000px) skewY(-25deg) rotateY(-90deg);
+    transform-origin: left;
+    box-shadow: inset 15px 0 15px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+}
+
+.fold:hover:after {
+    transform: perspective(1000px) skewY(-25deg) rotateY(0deg);
+}
+
+.fold:hover .map-title {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.map-title {
+    padding: 1.875rem 1.250rem 0;
+    font-size: 1.250rem;
+    position: relative;
+    color: #402218;
+}
+
+.map-title h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-title p {
+    margin-top: 1.250rem;
+}
