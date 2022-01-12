@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 body {
@@ -27,11 +30,13 @@ header {
 }
 
 .logo {
-    white-space: nowrap;
-    width: 100px;
     text-decoration: none;
-    color: #402218;
-    position: relative;
+    position: absolute;
+    top: -40%;
+    left: calc(50% - 7.813rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar {
@@ -43,7 +48,7 @@ header {
     padding: 0 2.5rem;
     list-style: none;
     position: absolute;
-    top: 140%;
+    top: 220%;
     left: 0;
 }
 
@@ -137,7 +142,7 @@ header {
 
 .container .desk {
     position: relative;
-    top: 45rem;
+    top: 49.8rem;
 }
 
 .container .desk .onTheDesk {
@@ -210,8 +215,8 @@ header {
 .container .coffeeMachine .Machine-header .display {
     width: 2.188rem;
     height: 2.188rem;
-    background: #a7ffeb;
-    border: 0.250rem solid #1de9b6;
+    background: #8c9eff;
+    border: 0.250rem solid #536dfe;
     position: absolute;
     top: 17.5%;
     left: 43%;
@@ -602,6 +607,6 @@ header {
 .container .desk .onTheDesk .flowerpot {
     width: 30rem;
     position: absolute;
-    top: -115%;
+    top: -100%;
     left: 60%;
 }
