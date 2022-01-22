@@ -1,14 +1,3 @@
-// 풀페이지
-TweenMax.defaultEase = Linear.easeOut;
-
-new fullpage("#fullpage", {
-    //options here
-    autoScrolling: true,
-    navigation: true,
-    anchors: ['page1', 'page2', 'page3', 'page4'],
-    navigationTooltips: ['Home', 'Menu', 'Skills', 'Portfolio']
-});
-
 // 버튼 클릭시 로고와 버튼 흰색으로 변경
 const whiteBtn = document.querySelector('.navBtn')
 

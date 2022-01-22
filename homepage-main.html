@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage-main.css">
+    <script src="https://kit.fontawesome.com/e48faf5860.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Homepage</title>
+</head>
+<body>
+    <header class="header">
+        <section class="logo">
+            <p class="logo_top">Coffee</p>
+            <p class="logo_middle">Memoria</p>
+            <p class="logo_bottom">Frontend</p>
+        </section>
+        <a href="#" class="navBtn">
+            <p class="btnBar"></p>
+        </a>
+        <section class="menu">
+            <ul>
+                <li class="list"> 
+                    <a href="#" class="pullRight">Home</a>
+                </li>
+                <li class="list">
+                    <a href="#" class="pullRight">Menu</a>
+                </li>
+                <li class="list">
+                    <a href="#" class="pullRight">Skills</a>
+                </li>
+                <li class="list">
+                    <a href="#" class="pullRight">Portfolio</a>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <aside class="navPage">
+        <ul>
+            <li class="page movePage">
+                <a href="#page1"></a>
+                <span class="navPage_text">HOME</span>
+            </li>
+            <li class="page">
+                <a href="#page2"></a>
+                <span class="navPage_text">MENU</span>
+            </li>
+            <li class="page">
+                <a href="#page3"></a>
+                <span class="navPage_text">SKILLS</span>
+            </li>
+            <li class="page">
+                <a href="#page4"></a>
+                <span class="navPage_text">PORTFOLIO</span>
+            </li>
+        </ul>
+    </aside>
+    <main class="fullPage">
+        <section id="page1" class="mainPage">
+            <video src="/data/coffeeBackgroundVideo.mp4" muted loop autoplay></video>
+        </section>
+
+        <section id="page2" class="mainPage">
+            <h1 class="pageTitle">Menu</h1>
+            <article class="pageContents">
+                <ul class="cardBox">
+                    <li class="card">
+                        <div class="imgBox">
+                            <ion-icon name="logo-css3" class="icon"></ion-icon>
+                        </div>
+                        <div class="content">
+                            <h3>CSS</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam suscipit harum quia iure?</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="imgBox">
+                            <ion-icon name="logo-javascript" class="icon"></ion-icon>
+                        </div>
+                        <div class="content">
+                            <h3>JavaScript</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam suscipit harum quia iure?</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="page3" class="mainPage">
+            <h1>Skills</h1>
+            <article class="pageContents">
+                <ul class="cardBox">
+                    <li class="card">
+                        <div class="imgBox">
+                            <ion-icon name="logo-javascript" class="icon"></ion-icon>
+                        </div>
+                        <div class="content">
+                            <h3>Html</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam suscipit harum quia iure?</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="imgBox">
+                            <ion-icon name="logo-css3" class="icon"></ion-icon>
+                        </div>
+                        <div class="content">
+                            <h3>CSS</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam suscipit harum quia iure?</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="imgBox">
+                            <ion-icon name="logo-javascript" class="icon"></ion-icon>
+                        </div>
+                        <div class="content">
+                            <h3>JavaScript</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam suscipit harum quia iure?</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="page4" class="mainPage">
+            <h1>Portfolio</h1>
+        </section>
+    </main>
+    <script src="homepage-main.js"></script>
+</body>
+</html>
