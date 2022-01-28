@@ -122,6 +122,32 @@
     overflow: hidden;
 }
 
+.menuEffect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px;
+    opacity: 0.8;
+}
+
+.menuEffect::before {
+    border: 2px solid transparent;
+}
+
+.menuEffect:hover::before {
+    border-top-color: #AA4A30;
+    border-right-color: #AA4A30;
+    border-bottom-color: #AA4A30;
+    border-left-color: #AA4A30;
+    transition: border-top-color 0.15s linear,
+                border-right-color 0.15s linear 0.15s,
+                border-bottom-color 0.15s linear 0.3s,
+                border-left-color 0.15s linear 0.45s;
+}
+
 .menuEffect span {
     position: absolute;
     background: #AA4A30;
