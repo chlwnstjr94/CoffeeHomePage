@@ -2,11 +2,12 @@
     font-family: 'GmarketSansMedium';
 }
 
-body {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    
     background: #402218;
     transform-style: preserve-3d;
 }
