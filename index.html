@@ -8,44 +8,20 @@
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/asset/lib/fullpage.min.css" />
+    <link rel="stylesheet" href="/asset/lib/fullpage.min.css"/>
     <link rel="stylesheet" href="/asset/css/common/common.css">
-    <link rel="stylesheet" href="/asset/css/common/header.css">
+    <!-- <link rel="stylesheet" href="/asset/css/common/header.css"> -->
     <link rel="stylesheet" href="/asset/css/home/home.css">
     <script src="https://kit.fontawesome.com/e48faf5860.js" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <title>Fullpage</title>
   </head>
 
   <body>
     <!-- header -->
-    <header class="header">
-      <section class="logo">
-          <p class="logo_top">Coffee</p>
-          <p class="logo_middle">Memoria</p>
-          <p class="logo_bottom">Frontend</p>
-      </section>
-      <a href="#" class="navBtn">
-          <p class="btnBar"></p>
-      </a>
-      <section class="menu">
-          <ul>
-              <li class="list"> 
-                <a href="#" class="menuBtn menuEffect">Home</a>
-              </li>
-              <li class="list">
-                <a href="#" class="menuBtn menuEffect">Menu</a>
-              </li>
-              <li class="list">
-                <a href="#" class="menuBtn menuEffect">Skills</a>
-              </li>
-              <li class="list">
-                <a href="#" class="menuBtn menuEffect">Portfolio</a>
-              </li>
-          </ul>
-      </section>
-    </header>
+    <header class="header"></header>
     <!-- page -->
     <main id="fullpage">
       <!-- page1 -->
@@ -62,14 +38,14 @@
                 <i class="fas fa-cube"></i>
                 <ul class="card3DContents">
                     <li class="content">
-                        <div class="contentTitle">
-                            <p>Map</p>
-                        </div>
+                        <a href="/menu/css-3D/3DImageGallery.html" class="contentTitle">
+                            <p>3D Image Gallery</p>
+                        </a>
                     </li>
                     <li class="content">
-                        <div class="contentTitle">
+                        <a href="#" class="contentTitle">
                             <p>dice</p>
-                        </div>
+                        </a>
                     </li>
                 </ul>
             </li>
@@ -149,8 +125,9 @@
     ></script>
     <script src="/asset/lib/fullpage.min.js"></script>
     <script src="/asset/js/common/fullpage.js"></script>
-    <script src="/asset/js/home/home.js"></script>
+    
     <script src="/asset/lib/vanilla-tilt.js"></script>
     <script src="/asset/js/common/tiltEffec.js"></script>
+    <script src="/asset/js/common/header.js"></script>
   </body>
 </html>
