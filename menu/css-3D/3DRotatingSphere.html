@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/asset/css/common/common.css">
+    <link rel="stylesheet" href="/asset/css/menu/3DRotatingSphere.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>3D Rotating Sphere</title>
+</head>
+<body>
+    <header class="header"></header>
+
+    <section id="myCanvasContainer">
+		<canvas width="600" height="600" id="myCanvas"></canvas>
+	</section>
+	<section id="tags">
+		<ul>
+			<li><a href="#espresso">Espresso</a></li>
+			<li><a href="#americano">Americano</a></li>
+			<li><a href="#latte">Latte</a></li>
+			<li><a href="#macchiato">Macchiato</a></li>
+			<li><a href="#mocha">Mocha</a></li>
+			<li><a href="#cappuccino">Cappuccino</a></li>
+			<li><a href="#affogato">Affogato</a></li>
+			<li><a href="#herbtea">Herbtea</a></li>
+			<li><a href="#icetea">Icetea</a></li>
+			<li><a href="#greentea">Greentea Latte</a></li>
+			<li><a href="#sweetpotato">Sweetpotato Latte</a></li>
+			<li><a href="#vanilla">Vanilla Latte</a></li>
+			<li><a href="#milktea">Milktea</a></li>
+			<li><a href="#handdrip">Handdrip</a></li>
+			<li><a href="#dutch">Dutch</a></li>
+		</ul>
+	</section>
+
+    <!-- 팝업창 콘텐츠 -->
+    <section class="title" id="espresso">
+        <a href="#myCanvas" class="closeBtn">
+            <span></span>
+            <span></span>
+        </a>
+        <h3>Espresso</h3>
+        <article class="imgBox">
+            <img src="/asset/img/menu/3DRotatingSphere/espresso.jpg" alt="espresso">
+        </article>
+        <article class="contents">
+            <h4>추출법</h4>
+            <ol>
+                <li>1. 에스프레소 머신을 준비한다.</li>
+                <li>2. 원두 7g, 물온도 90°C, 추출압 9bar, 추출 시간 25s, 추출 양 25ml 조건으로 에스프레소를 내린다.</li>
+            </ol>
+            <h4>종류</h4>
+            <ol>
+                <li>1. 솔로(싱글) - 7 g으로 30 ml 정도 추출</li>
+                <li>2. 도피오(더블) - 14 g으로 60 ml 정도 추출</li>
+                <li>3. 리스트레토 - 7 g으로 20 ml 정도 추출</li>
+                <li>4. 룽고 - 7 g으로 40 ml 이상 추출</li>
+            </ol>
+            <h4>효능</h4>
+            <p>항산화 작용과 노화방지에 도움을 준다.</p>
+        </article>
+    </section>
+    <a href="#myCanvas" class="closeBg"></a>
+
+    <section class="title" id="americano">
+        <a href="#myCanvas" class="closeBtn">
+            <span></span>
+            <span></span>
+        </a>
+        <h3>Americano</h3>
+        <article class="imgBox">
+            <img src="/asset/img/menu/3DRotatingSphere/americano.jpg" alt="americano">
+        </article>
+        <article class="contents">
+            <h4>레시피</h4>
+            <ol>
+                <li>1. 에스프레소 머신으로 에스프레소를 내린다.</li>
+                <li>2. 따뜻한 물이나 차가운 얼음 물을 준비하고, 에스프레소를 부어준다.</li>
+            </ol>
+            <h4>효능</h4>
+            <ol>
+                <li>1. 집중력 향상</li>
+                <li>2. 당뇨(성인병) 예방, 항암 효과, 치매 예방, 변비 예방, 통풍예방</li>
+                <li>3. 다이어트 효과</li>
+                <li>4. 우울증 감소</li>
+                <li>5. 숙취 효과</li>
+                <li>6. 운동능력 향상</li>
+            </ol>
+        </article>
+    </section>
+    <a href="#myCanvas" class="closeBg"></a>
+
+    <section class="title" id="latte">
+        <a href="#myCanvas" class="closeBtn">
+            <span></span>
+            <span></span>
+        </a>
+        <h3>Latte</h3>
+        <article class="imgBox">
+            <img src="/asset/img/menu/3DRotatingSphere/latte.jpg" alt="latte">
+        </article>
+        <article class="contents">
+            <h4>레시피</h4>
+            <ol>
+                <li>1. 에스프레소 머신으로 에스프레소를 내린다.</li>
+                <li>2. 준비된 에스프레소에 따뜻한 우유이나 차가운 얼음 우유를 붇고 우유 거품을 올려준다.</li>
+            </ol>
+            <h4>효능</h4>
+            <ol>
+                <li>1. 에너지 생성</li>
+                <li>2. 항산화 효과</li>
+                <li>3. 수명 연장</li>
+            </ol>
+            <h4>추천</h4>
+            <ol>
+                <li>1. 아메리카노가 써서 못드시는 분들</li>
+                <li>2. 우유 고소한 맛을 좋아하면 마시기 좋다.</li>
+                <li>3. 달게 먹고싶으면 시럽을 넣으면 된다.</li>
+            </ol>
+        </article>
+    </section>
+    <a href="#myCanvas" class="closeBg"></a>
+
+    <section class="title" id="macchiato">
+        <a href="#myCanvas" class="closeBtn">
+            <span></span>
+            <span></span>
+        </a>
+        <h3>Macchiato</h3>
+        <article class="imgBox">
+            <img src="/asset/img/menu/3DRotatingSphere/macchiato.jpg" alt="macchiato">
+        </article>
+        <article class="contents">
+            <h4>레시피</h4>
+            <ol>
+                <li>1. 컵에 카라멜 시럽(소스)과 바닐라 시럽을 원하는 만큼 넣어준다.</li>
+                <li>2. 에스프레소 머신으로 에스프레소를 내린다.</li>
+                <li>3. 카라멜 시럽(소스)과 에스프레소를 섞고난 후 따뜻한 우유이나 차가운 얼음 우유를 붇고 우유 거품을 올려준다.</li>
+                <li>4. 우유 거품 위에 카라멜 드리즐을 해준다.</li>
+            </ol>
+            <h4>추천</h4>
+            <ol>
+                <li>1. 아메리카노가 써서 못드시는 분들</li>
+                <li>2. 카라멜 향과 맛을 좋아하면 마시기 좋다.</li>
+            </ol>
+        </article>
+    </section>
+    <a href="#myCanvas" class="closeBg"></a>
+
+    <section class="title" id="mocha">
+        <a href="#myCanvas" class="closeBtn">
+            <span></span>
+            <span></span>
+        </a>
+        <h3>Mocha</h3>
+        <article class="imgBox">
+            <img src="/asset/img/menu/3DRotatingSphere/mocha.jpg" alt="mocha">
+        </article>
+        <article class="contents">
+            <h4>레시피</h4>
+            <ol>
+                <li>1. 컵에 초코 시럽(소스)을 원하는 만큼 넣어준다.</li>
+                <li>2. 에스프레소 머신으로 에스프레소를 내린다.</li>
+                <li>3. 초코 시럽(소스)과 에스프레소를 섞고난 후 따뜻한 우유이나 차가운 얼음 우유를 붇고 우유 거품이나 휘핑 크림을 올려준다.</li>
+                <li>4. 우유 거품 또는 휘핑 크림 위에 초코 드리즐을 해준다.</li>
+            </ol>
+            <h4>추천</h4>
+            <ol>
+                <li>1. 아메리카노가 써서 못드시는 분들</li>
+                <li>2. 초코 향과 맛을 좋아하면 마시기 좋다.</li>
+            </ol>
+        </article>
+    </section>
+    <a href="#myCanvas" class="closeBg"></a>
+
+    <section class="title" id="cappuccino">
+        <a href="#myCanvas" class="closeBtn">
+            <span></span>
+            <span></span>
+        </a>
+        <h3>Cappuccino</h3>
+        <article class="imgBox">
+            <img src="/asset/img/menu/3DRotatingSphere/cappuccino.jpg" alt="cappuccino">
+        </article>
+        <article class="contents">
+            <h4>레시피</h4>
+            <ol>
+                <li>1. 에스프레소 머신으로 에스프레소를 내린다.</li>
+                <li>2. 에스프레소 위에 계피 가루를 적당량 뿌려준다.</li>
+                <li>3. 따뜻한 우유이나 차가운 얼음 우유를 붇고 우유 거품을 올려준다.</li>
+                <li>4. 차갑게 먹을 때에는 2번을 하지말고 마지막 우유 거품 위에 계피 가루를 뿌려준다.</li>
+            </ol>
+            <h4>추천</h4>
+            <ol>
+                <li>1. 아메리카노가 써서 못드시는 분들</li>
+                <li>2. 계피 향을 좋아하면 마시기 좋다.</li>
+                <li>3. 우유 거품을 많이 원할 때 마시면 좋다.</li>
+            </ol>
+        </article>
+    </section>
+    <a href="#myCanvas" class="closeBg"></a>
+
+    <section class="title" id="affogato">
+        <a href="#myCanvas" class="closeBtn">
+            <span></span>
+            <span></span>
+        </a>
+        <h3>Affogato</h3>
+        <article class="imgBox">
+            <img src="/asset/img/menu/3DRotatingSphere/affogato.jpg" alt="affogato">
+        </article>
+        <article class="contents">
+            <h4>레시피</h4>
+            <ol>
+                <li>1. 에스프레소 머신으로 에스프레소를 내린다.</li>
+                <li>2. 컵에 바닐라 아이스크림을 한 스쿱 퍼 넣어준다.</li>
+                <li>3. 아이스크림 위에 카라멜 또는 초코 드리즐을 해준다..</li>
+                <li>4. 에스프레소를 아이스크림에 부어 같이 먹는다.</li>
+            </ol>
+            <h4>추천</h4>
+            <ol>
+                <li>1. 아이스크림을 달콤한 맛과 커피의 쓴 맛을 동시에 느끼기에 좋다.</li>
+                <li>2. 에스프레소를 처음 먹을 때 이렇게 먹어보는 것도 괜찮다.</li>
+            </ol>
+        </article>
+    </section>
+    <a href="#myCanvas" class="closeBg"></a>
+
+    <section class="title" id="herbtea">
+        <a href="#myCanvas" class="closeBtn">
+            <span></span>
+            <span></span>
+        </a>
+        <h3>Herbtea</h3>
+        <article class="imgBox">
+            <img src="/asset/img/menu/3DRotatingSphere/herbtea.jpg" alt="herbtea">
+        </article>
+        <article class="contents">
+            <h4>레시피</h4>
+            <ol>
+                <li>1. 따뜻한 물(약 80°C)을 준비해준다.</li>
+                <li>2. 준비한 물에 원하는 종류의 허브를 넣는다.</li>
+                <li>3. 7분정도 우려준 뒤 마신다.</li>
+                <li>4. 차갑게 마시고 싶을 때는 약간의 따뜻한 물에 허브를 진하게 우려 차가운 물을 넣어 마신다.</li>
+            </ol>
+            <h4>효능</h4>
+            <ol>
+                <li>1. 루이보스 - 항산화 작용</li>
+                <li>2. 캐모마일 - 감기 증상 완화</li>
+                <li>3. 라벤더 - 불면증 해소</li>
+                <li>4. 자스민 - 심신 안전</li>
+                <li>5. 페퍼민트 - 항균작용</li>
+            </ol>
+        </article>
+    </section>
+    <a href="#myCanvas" class="closeBg"></a>
+
+    <section class="title" id="icetea">
+        <a href="#myCanvas" class="closeBtn">
+            <span></span>
+            <span></span>
+        </a>
+        <h3>Icetea</h3>
+        <article class="imgBox">
+            <img src="/asset/img/menu/3DRotatingSphere/icetea.jpg" alt="icetea">
+        </article>
+        <article class="contents">
+            <h4>레시피</h4>
+            <ol>
+                <li>1. 복숭아맛 또는 레몬맛 아이스티 파우더를 준비해 준다.</li>
+                <li>2. 파우더를 컵에 넣고 약간의 따뜻한 물로 녹여준다.</li>
+                <li>3. 다 녹였으면 차가운 물과 얼음을 넣어 마신다.</li>
+            </ol>
+            <h4>추천</h4>
+            <ol>
+                <li>1. 에스프레소 샷 추가를 해 먹어도 좋다.</li>
+                <li>2. 단 아이스티가 싫다면 홍차를 우려 차갑게 얼음을 넣어 마시면 된다.</li>
+            </ol>
+        </article>
+    </section>
+    <a href="#myCanvas" class="closeBg"></a>
+
+    <section class="title" id="greentea">
+        <a href="#myCanvas" class="closeBtn">
+            <span></span>
+            <span></span>
+        </a>
+        <h3>Greentea Latte</h3>
+        <article class="imgBox">
+            <img src="/asset/img/menu/3DRotatingSphere/greentea.jpg" alt="greentea">
+        </article>
+        <article class="contents">
+            <h4>레시피</h4>
+            <ol>
+                <li>1. 녹차 파우더를 준비해 준다.</li>
+                <li>2. 파우더를 컵에 넣고 따뜻한 우유를 넣어 녹여준다.</li>
+                <li>3. 다 녹였으면 위에 우유 거품을 올리고 마신다.</li>
+                <li>4. 차갑게 먹으려면 약간의 따뜻한 우유로 파우더를 녹이고 우유를 넣어주고 얼음을 넣어 마시면 된다. </li>
+            </ol>
+            <h4>추천</h4>
+            <ol>
+                <li>1. 라떼는 마시고 싶은데 커피가 부담되고 녹차를 좋아하면 마시기 좋다.</li>
+                <li>2. 에스프레소 샷 추가를 해 먹어도 좋다.</li>
+            </ol>
+        </article>
+    </section>
+    <a href="#myCanvas" class="closeBg"></a>
+
+    <section class="title" id="sweetpotato">
+        <a href="#myCanvas" class="closeBtn">
+            <span></span>
+            <span></span>
+        </a>
+        <h3>Sweetpotato Latte</h3>
+        <article class="imgBox">
+            <img src="/asset/img/menu/3DRotatingSphere/sweetpopato.jpg" alt="sweetpopato">
+        </article>
+        <article class="contents">
+            <h4>레시피</h4>
+            <ol>
+                <li>1. 고구마 파우더를 준비해 준다.</li>
+                <li>2. 파우더를 컵에 넣고 따뜻한 우유를 넣어 녹여준다.</li>
+                <li>3. 다 녹였으면 위에 우유 거품을 올리고 마신다.</li>
+                <li>4. 차갑게 먹으려면 약간의 따뜻한 우유로 파우더를 녹이고 우유를 넣어주고 얼음을 넣어 마시면 된다. </li>
+            </ol>
+            <h4>추천</h4>
+            <ol>
+                <li>1. 라떼는 마시고 싶은데 커피가 부담되고 고구마를 좋아하면 마시기 좋다.</li>
+            </ol>
+        </article>
+    </section>
+    <a href="#myCanvas" class="closeBg"></a>
+
+    <section class="title" id="vanilla">
+        <a href="#myCanvas" class="closeBtn">
+            <span></span>
+            <span></span>
+        </a>
+        <h3>Vanilla Latte</h3>
+        <article class="imgBox">
+            <img src="/asset/img/menu/3DRotatingSphere/vanilla.jpg" alt="vanilla">
+        </article>
+        <article class="contents">
+            <h4>레시피</h4>
+            <ol>
+                <li>1. 바닐라 시럽을 컵에 넣어 준비해 준다.</li>
+                <li>2. 컵에 에스프레소를 내린다.</li>
+                <li>3. 따뜻한 우유나 차가운 우유와 얼음을 준비하여 넣어준다.</li>
+                <li>4. 우유 거품을 위에 올리고 마신다. </li>
+            </ol>
+            <h4>추천</h4>
+            <ol>
+                <li>1. 바닐라 향을 좋아하면 마시기 좋다.</li>
+            </ol>
+        </article>
+    </section>
+    <a href="#myCanvas" class="closeBg"></a>
+
+    <section class="title" id="milktea">
+        <a href="#myCanvas" class="closeBtn">
+            <span></span>
+            <span></span>
+        </a>
+        <h3>Milktea Latte</h3>
+        <article class="imgBox">
+            <img src="/asset/img/menu/3DRotatingSphere/milktea.jpg" alt="milktea">
+        </article>
+        <article class="contents">
+            <h4>레시피</h4>
+            <ol>
+                <li>1. 홍차 또는 녹차와 설명을 1대1비율로 병에 넣어준다.</li>
+                <li>2. 70 ~ 80°C의 물을 병에 넣고 설탕이 녹을 때까지 저어준다.</li>
+                <li>3. 진하게 우려질 때까지 기다린다.</li>
+                <li>4. 우려졌으면 차가운 우유를 넣고 냉장고에 넣은 후 다음 날 채에 거른 후 마신다.</li>
+            </ol>
+            <h4>추천</h4>
+            <ol>
+                <li>1. 가볍게 티를 즐기기에 좋다.</li>
+                <li>2. 따뜻하게 먹고싶으면 데워먹으면 좋다.</li>
+            </ol>
+        </article>
+    </section>
+    <a href="#myCanvas" class="closeBg"></a>
+
+    <section class="title" id="handdrip">
+        <a href="#myCanvas" class="closeBtn">
+            <span></span>
+            <span></span>
+        </a>
+        <h3>Handdrip</h3>
+        <article class="imgBox">
+            <img src="/asset/img/menu/3DRotatingSphere/handdrip.jpg" alt="handdrip">
+        </article>
+        <article class="contents">
+            <h4>레시피</h4>
+            <ol>
+                <li>1. 원하는 원두를 알맞게 갈아준다.</li>
+                <li>2. 트레이와 기름종이를 준비하고 갈은 원두를 넣어준다.</li>
+                <li>3. 처음엔 위에가 젖을 정도로만 돌려가며 적셔 준다.(그러면 빵처럼 부푸러 오를 것이다. 그러면 성공이다.)</li>
+                <li>4. 원하는 양만큼 물을 돌려가며 부어준다.</li>
+                <li>5. 내린 커피를 컵에 담아 마신다.</li>
+            </ol>
+            <h4>추천</h4>
+            <ol>
+                <li>1. 커피 본연의 맛을 느끼고 싶으면 마시기 좋다.</li>
+                <li>2. 아메리카노보다 부드러워 마시기 좋다.</li>
+            </ol>
+        </article>
+    </section>
+    <a href="#myCanvas" class="closeBg"></a>
+
+    <section class="title" id="dutch">
+        <a href="#myCanvas" class="closeBtn">
+            <span></span>
+            <span></span>
+        </a>
+        <h3>Dutch</h3>
+        <article class="imgBox">
+            <img src="/asset/img/menu/3DRotatingSphere/dutch.jpg" alt="dutch">
+        </article>
+        <article class="contents">
+            <h4>레시피</h4>
+            <ol>
+                <li>1. 원하는 원두를 알맞게 갈아준다.</li>
+                <li>2. 더치 커피 트레이의 커피 담는 칸에 기름종이를 깔고 물에 살짝 젹셔 준 후 커피를 넣는다.</li>
+                <li>3. 물 넣는 칸에 물이나 얼음 또는 둘 다 넣어 준 후 일정한 간격으로 물이 떨어지도록 조정해 준다.</li>
+                <li>4. 원하는 양만큼 내리기를 기다린다.(중간에 물을 보충해 줘도 좋다.)</li>
+                <li>5. 다 내렸으면 원액과 물을 섞어 마신다.</li>
+            </ol>
+            <h4>추천</h4>
+            <ol>
+                <li>1. 원액 소주 잔 1잔에 물 한컵 정도 양으로 마신다.(취향에 따라 조절해 주면 좋다.)</li>
+            </ol>
+        </article>
+    </section>
+    <a href="#myCanvas" class="closeBg"></a>
+
+    <script src="/asset/js/common/header.js"></script>
+    <script src="/asset/lib/tagcanvas.min.js" type="text/javascript"></script>
+    <script src="/asset/js/menu/3DRotatingSphere.js" type="text/javascript"></script>
+</body>
+</html>
