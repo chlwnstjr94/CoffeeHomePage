@@ -9,12 +9,11 @@ body {
     flex-direction: column;
 }
 
-canvas {
+#canvas {
     width: 800px;
     height: 450px;
     background: #efebe9;
     border: 1px solid #402218;
-    overflow: hidden;
     position: relative;
 }
 
