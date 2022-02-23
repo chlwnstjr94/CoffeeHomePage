@@ -9,10 +9,17 @@ class Player {
         Player.prototype.FIRST_Y = 500;
     } 
 
+    // 초기화 - 
+    init() {
+        this.jump_direction = true;
+        this.jump_status = null;
+    }
+
     constructor() {
         this.set_constants_variables();
         
-        this.jump_direction = true;
+        this.init();
+        
         this.now_y = this.FIRST_Y;
     }
 
@@ -30,27 +37,37 @@ class Player {
 
     jump_draw(self) {
 
-        let speed;
+        // 위치 정보
+        // console.log('first_x: ' + self.first_x + ' / first_y: ' + self.now_y);
+
+        // 속도 + 방향인 속도
+        let speed_direction;
+
         if (self.jump_direction) {
-            speed = self.JUMP_SPEED * -1;
+            speed_direction = self.JUMP_SPEED * -1;
         } else {
-            speed = self.JUMP_SPEED;
+            speed_direction = self.JUMP_SPEED;
         }
 
-        self.draw(speed);
+        self.draw(speed_direction);
 
         if (self.now_y === self.JUMP_HEIGHT) {
             self.jump_direction = false;
         } else if (self.now_y === self.FIRST_Y && !self.jump_direction) {
-            self.jump_direction = true;
-            clearInterval(self.interval);
+            // 초기화를 밑에 둔 이유 : 초기화를 하고 clearInterval을 하면 interval 값이 null로 되어있기 때문에
+            clearInterval(self.jump_status);
+            // 초기화
+            self.init();
         }
     }
 
     jump() {
         let self = this;
-        self.interval = setInterval(function() {
-            self.jump_draw(self);
-        }, 1);
+        // jump_status가 null이 아닐때 jump_status setInterval함수 실행
+        if(!self.jump_status){
+            self.jump_status = setInterval(function() {
+                self.jump_draw(self);
+            }, 1);
+        }
     }
 }
