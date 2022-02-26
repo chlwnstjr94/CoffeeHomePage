@@ -2,7 +2,7 @@ class Player {
 
     set_constants_variables() {
         Player.prototype.JUMP_HEIGHT = 200;
-        Player.prototype.JUMP_SPEED = 1;
+        Player.prototype.JUMP_SPEED = 5;
         Player.prototype.WIDTH = 60;
         Player.prototype.HEIGHT = 60;
         Player.prototype.FIRST_X = 50;
@@ -33,6 +33,9 @@ class Player {
             this.now_y += p_move_y;
         }
         ctx.fillRect(this.FIRST_X, this.now_y, this.WIDTH, this.HEIGHT);
+        // console.log(this.FIRST_X+", "+ this.now_y+" / "+this.WIDTH+" / "+this.HEIGHT) 
+        // -> 50 ~ 110
+        
     }
 
     jump_draw(self) {
@@ -67,7 +70,7 @@ class Player {
         if(!self.jump_status){
             self.jump_status = setInterval(function() {
                 self.jump_draw(self);
-            }, 1);
+            }, 10);
         }
     }
 }
