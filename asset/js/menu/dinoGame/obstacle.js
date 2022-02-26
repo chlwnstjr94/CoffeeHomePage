@@ -5,10 +5,10 @@ class Obstacle {
         Obstacle.prototype.WIDTH = 60;
         Obstacle.prototype.HEIGHT = 100;
         // 장애물 이동
-        Obstacle.prototype.SLIDE_SPEED = 2;
+        Obstacle.prototype.SLIDE_SPEED = 3;
         Obstacle.prototype.CYCLE = 1;
         // 장애물 위치
-        Obstacle.prototype.FIRST_X = 1000;
+        Obstacle.prototype.FIRST_X = 2000;
         Obstacle.prototype.FIRST_HIGH_Y = 260;
         Obstacle.prototype.FIRST_LOW_Y = 460;
     }
@@ -34,7 +34,7 @@ class Obstacle {
         // 장애물 존재
         this.is_exist = false;
 
-        this.canvasLeftPos = ctx.canvas.offsetLeft - 350;
+        this.canvasLeftPos = ctx.canvas.offsetLeft - 600;
     }
     // 그림
     draw(is_new) {
@@ -46,9 +46,14 @@ class Obstacle {
         }
         ctx.fillStyle = 'green';
         ctx.fillRect(this.now_x, this.first_y, this.WIDTH, this.HEIGHT);
+        // if (110 === this.now_x) {
+        //     alert("hi~~~~~");
+        //     console.log("hi~~~~");
+        // }
+        // console.log(this.now_x+" / "+ this.first_y+" / "+this.WIDTH+" / "+this.HEIGHT) -> 260 ~ 360
     }
     // 동작
-    run(self) {
+    move(self) {
         // 삭제
         if (self.is_exist && self.now_x < self.canvasLeftPos) {
             // if문의 self.is_exist가 true라 false로 삭제
@@ -68,6 +73,13 @@ class Obstacle {
             self.is_exist = true;
             self.draw(true);
         }
+    }
+
+    run() {
+        let self = this;
+        return setInterval(function() {
+            self.move(self);
+        }, 1)
     }
 }
 
