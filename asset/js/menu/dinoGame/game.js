@@ -23,7 +23,6 @@ class DinoGame {
     }
 
     end() {
-
         if(this.player.jump_status) {
             clearInterval(this.player.jump_status);
         }
@@ -71,10 +70,9 @@ class DinoGame {
 
     crash(self) {
         
-        // 충동
+        // 충돌
         self.get_player_position();
         
-
         for (let i=0; i < self.obstacle_list.length; i++) {
             self.get_obstacle_position(self.obstacle_list[i]);
 
@@ -83,7 +81,7 @@ class DinoGame {
             console.log(crash_width +' / '+ crash_height);
 
             if (crash_width &&  crash_height ) {
-                // 충돌
+                // 충돌 시 끝!
                 self.end();
             }
         }
@@ -95,7 +93,7 @@ class DinoGame {
 
         // 사용자
         self.player.draw();
-        canvas.addEventListener('click', function(event) {
+        canvas.addEventListener('click', function() {
             self.player.jump();
         });
         // 장애물
@@ -104,7 +102,7 @@ class DinoGame {
                 self.obstacle_list[i].run()
             )
         }
-        // 충돌
+        // 충돌/스코어
         self.interval_list.push(
             setInterval(function() {
                 self.crash(self);
